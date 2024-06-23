@@ -1,0 +1,12 @@
+/*setting CSS background color in case background image fails*/
+.container {
+  background-color: black;
+}
+
+/*keep background image from tiling and stay in position 
+    on index and and contact pages*/
+.background-index {
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-attachment: fixed;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--linking to bootstrap styesheet-->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Created a container to add "margins" to the page and with external CSS 
+     add background color and for this page no background image tiling-->
+  <body class="container background-index" background="images/EarthDistantsmaller.png">
+    
+    <!--Creating a banner in Bootstrap-->
+    <div>
+      <h1 class="text-center text-white">Contact</h1>
+    </div>
+    
+    <!--Creating a navbar container in bootstrap-->
+    <div class="container">
+                    <!--calling the navbar class 
+        setting color theme and allowing reactive sizing-->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"></a>
+        <!--Bootstrap button for a dropdown navbar substitute-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controle="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!--mechanics of the navbar in an unordered list making links active and collapsible
+            for smaller screens-->
+        <div class="collapse navbar-collapse" id="" navbarNavDropdown>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HomePlanet</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="playground.html">Playground</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--End of Navbar-->
+
+    <!--Beginning of container (not fluid, I don't want to use the entire width)-->
+    <div id="main-container" class="container bg-clear">
+      <!--Using Bootstrap grid row to organize scalable content for contact page-->
+      <div class="row" >
+        <!--Beginning of table for contact info, using consistant dark mode 
+          and adding a hover for emphasis--> 
+        <table class="table table-dark table-hover mt-3">
+          <tr>
+            <th>Your Star Guides</th>
+            <th>Planet</th>
+            <th>Language Spoken</th>
+            <th>email</th>
+          </tr>
+          <tr>
+            <td>K'Ehleyr</td>
+            <td>Qo'noS</td>
+            <td>Common, Klingon</td>
+            <td>gooddaytodie@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Erxscrtch</td>
+            <td>Gliese 581e</td>
+            <td>Hctrcsxre, Common</td>
+            <td>Say his name three times</td>
+          </tr>
+          <tr>
+            <td>Kitty</td>
+            <td>HD 209458b</td>
+            <td>Purrsian</td>
+            <td>planetours@aol.com</td>
+          </tr>
+        </table>
+        <!--End of table-->
+      </div>
+      <!--Another Bootsrap row for the grid-->
+      <div class="row">
+        <h4 class="text-center text-white fst-italic">
+          Or contact us here at HomePlanet and we will help plan your adventure of a lifetime!</h4>
+      </div>
+      <!--Boostrap form group using columns for horizontal alignment-->
+    <form>
+      <div class="form-group"></div>
+      <!--Bootstrap row-->
+        <div class="row">
+          <!--bootstrap columns for horizontal alignment-->
+          <div class="col-sm">
+            <!--Form submission text input box-->
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <!--bootstrap columns for horizontal alignment-->
+          <div class="col-sm">
+            <!--Form submission text input box-->
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+          <!--bootstrap columns for horizontal alignment-->
+          <div class="col-sm">
+            <!--Form submission text input box-->
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+        </div>
+        <!--Bootstrap submission button centered with seconday (gray) color scheme and top margin-->
+        <div class="text-center">
+          <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+        </div>
+      </div>
+
+    </form> 
+
+        <!--calling for scripts for jquery and bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--linking to bootstrap styesheet-->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Created a container to add "margins" to the page, and with external CSS 
+     add background color and for this page no background image tiling-->
+  <body
+    class="container background-index"
+    background="images/WorldGlobeLargererDouble.png"
+  >
+    <!--Creating a banner in Bootstrap-->
+    <div>
+      <h1 class="text-center text-white">HomePlanet</h1>
+    </div>
+
+    <!--Creating a navbar container in bootstrap-->
+    <div class="container">
+      <!--calling the navbar class 
+        setting color theme and allowing reactive sizing-->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"></a>
+        <!--Bootstrap button for a dropdown navbar substitute-->
+        <!--check spelling on aria-controle-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controler="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--mechanics of the navbar in an unordered list making links active and collapsible
+            for smaller screens-->
+        <div class="collapse navbar-collapse" id="" navbarNavDropdown>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HomePlanet</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="playground.html">Playground</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--End of Navbar-->
+    <!--Bootstrap text customization using centering, italics, and a top margin-->
+    <h2 class="text-center text-white fst-italic mt-5">
+      Your Journey to the Stars starts here!
+    </h2>
+    <h3 class="text-center text-white fst-italic mt-5">
+      Explore the Playground or Contact us for your adventure to begin
+    </h3>
+    <!--calling for scripts for jquery and bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

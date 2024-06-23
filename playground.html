@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--linking to bootstrap styesheet-->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Body background image a field of stars and container 
+       with external CSS foe Background color-->
+  <body
+    background="images/stars_smallerer.png"
+    class="container img-fluid"
+    alt="Background of stars"
+  >
+    <!--Creating a banner in Bootstrap-->
+    <div id="main-container">
+      <h1 class="text-center text-white">Playground</h1>
+
+      <!--Creating a navbar container in bootstrap-->
+      <div class="container">
+        <!--calling the navbar class 
+        setting color theme and allowing reactive sizing-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html"></a>
+          <!--Bootstrap button for a dropdown navbar substitute-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controle="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--mechanics of the navbar in an unordered list making links active and collapsible
+            for smaller screens-->
+          <div class="collapse navbar-collapse" id="" navbarNavDropdown>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HomePlanet</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="playground.html">Playground</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--End of Navbar-->
+
+      <!--Beginning of container (not fluid, I don't want to use the entire width)-->
+      <div id="main-container" class="container bg-clear">
+        <!--Bootstrap row-->
+        <div class="row">
+          <!--Bootstrap text customization using centering, white text, and italics-->
+          <h3 class="text-center text-white fst-italic">
+            Come visit all this and more!
+          </h3>
+        </div>
+        <!--Bootstrap row-->
+        <div class="row">
+          <!--Bootstrap column-->
+          <div class="col-sm">
+            <!--Bootstrap text customization using centering, white text, and italics-->
+            <h2 class="text-center text-white fst-italic">Cool Nebulae</h2>
+          </div>
+          <!--column-->
+          <div class="col-sm">
+            <!--Bootstrap text customization using centering, white text, and italics-->
+            <h2 class="text-center text-white fst-italic">Cool Galaxae</h2>
+          </div>
+        </div>
+        <!--row-->
+        <div class="row">
+          <!--column of the row class using small for realignment-->
+          <div class="col-sm">
+            <!-- centered text-->
+            <div class="text-center">
+              <!--image tag with Bootstrap fluid class to fill content, rounded for edges, and a top margin-->
+              <img
+                src="images/EagleNebula500w.png"
+                class="img-fluid rounded mt-1"
+                alt="Eagle Nebula"
+              />
+            </div>
+            <!-- centered text-->
+            <div class="text-center">
+              <!--image tag with Bootstrap fluid class to fill content, rounded for edges, and a top margin-->
+              <img
+                src="images/RingNebula500w.png"
+                class="img-fluid rounded mt-3 mb-2"
+                alt="Ring Nebula"
+              />
+            </div>
+          </div>
+
+          <!--2nd column of the row class using small for realignment-->
+          <div class="col-sm">
+            <!-- centered text-->
+            <div class="text-center">
+              <!--image tag with Bootstrap fluid class to fill content, rounded for edges, and a top margin-->
+              <img
+                src="images/AndromedaGalaxy500w.png"
+                class="img-fluid rounded mt-1"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="text-center">
+              <!--image tag with Bootstrap fluid class to fill content, rounded for edges, and a top margin-->
+              <img
+                src="images/TriangulumGalaxy500w.png"
+                class="img-fluid rounded mt-3"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Container-->
+
+      <!--calling for scripts for jquery and bootstrap-->
+      <script src="node_modules/jquery/dist/jquery.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </div>
+  </body>
+</html>
