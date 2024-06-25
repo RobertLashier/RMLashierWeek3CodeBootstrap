@@ -29,21 +29,25 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
           <a class="navbar-brand" href="index.html"></a>
           <!--Bootstrap button for a dropdown navbar substitute-->
+          <!--check spelling on aria-controle-->
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controle="navbarNavDropdown"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <!--mechanics of the navbar in an unordered list making links active and collapsible
             for smaller screens-->
-          <div class="collapse navbar-collapse" id="" navbarNavDropdown>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            navbarNavDropdown
+          >
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">HomePlanet</a>
